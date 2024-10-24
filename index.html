@@ -18,6 +18,34 @@
         .inline {
             display: inline;
         }
+        .scrollable-div {
+            max-height: 300px; /* Set the max height of the div */
+            overflow-y: auto;  /* Enable vertical scrolling */
+            padding: 10px;
+            border: 1px solid #ccc; /* Optional: to show the boundary */
+            /* border-image: linear-gradient(to right, #4682b4, #00CFFF) 1; */
+            border-radius: 15px; /* Rounded corners */
+            /* font-family: 'Arial', serif;  */
+            /* box-shadow: 0 4px 8px rgba(0, 123, 255, 0.5); Add a shadow */
+        }
+        .scrollable-div::-webkit-scrollbar {
+            width: 12px; /* Width of the scrollbar */   
+        }
+
+        .scrollable-div::-webkit-scrollbar-track {
+            background: #f1f1f1; /* Track color */
+            border-radius: 10px;
+        }
+
+        .scrollable-div::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #6f94cd, #88abda); /* Gradient color */
+            border-radius: 10px; /* Rounded scrollbar */
+            border: 2px solid #f1f1f1; /* Padding around the scrollbar */
+        }
+
+        .scrollable-div::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(to bottom, #2e59a7, #5976ba); /* Darker on hover */
+        }
     </style>
 </head>
 
@@ -97,11 +125,14 @@
             </div>
         </div>
 
-        
-        <div class="mb-5">
-            <a class="anchor" id="news"></a>
-            <h3>News</h3>
+        <a class="anchor" id="news"></a>
+        <h3>News</h3>
+        <div class="scrollable-div mb-5">
+
 			<ul>		
+                <li>
+					<strong>2024.10:</strong> 🎤 Give an oral presentation for the published paper DiffSeer in <u>IEEE VIS 2024</u>!
+				</li>
 				<li>
 					<strong>2024.07:</strong> Become a <u>Research Engineer</u> at Nanyang Technological University, Singapore!
 				</li>
